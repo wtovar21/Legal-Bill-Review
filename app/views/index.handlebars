@@ -1,0 +1,33 @@
+
+      <div id="wrapper">
+      <h1>Legal Bill Review</h1>
+
+    <h2>Add a Bill</h2>
+
+    <form class="create-form">
+      <div class="form-group">
+        <label for="rate">Rate:</label>
+        <input class="form-control" type="text" id="rate" name="name">
+        <label for="date">Date:</label>
+        <input class="form-control" type="text" id="date" name="name">
+      </div>
+      <button type="submit" class="btn btn-primary mb-2">Add Bill</button>
+    </form>
+
+
+  <div id="results">
+      <h1>Rate</h1>
+          {{#each bills}}
+            <div> {{this.rate}}</div>
+          {{/each}}
+
+    
+      <h1>Date</h1>
+          {{#each bills}}
+            <div> {{this.date}}</div>
+          {{/each}}
+      </div>
+    </div>
+
+</div>
+
