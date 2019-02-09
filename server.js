@@ -18,11 +18,11 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 //routes
-var users = require('./controllers/user-routes');
-app.use(users);
+// var users = require('./controllers/user-routes');
+//app.use(users); //
 
-var html = require('./controllers/html-routes');
-app.use(html);
+//var html = require('./controllers/html-routes');
+//app.use(html);
 
 //Original n.sure? look this up. 
 require('./app/routing/apiRoutes.js')(app); 
